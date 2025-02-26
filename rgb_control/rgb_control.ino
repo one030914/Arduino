@@ -14,22 +14,6 @@ void setup() {
 }
 
 void loop() {
-  // RGB LED sequence.
-  // if(++r > 255){
-  //   r--;
-  // }else if(--r < 0){
-  //   r++;
-  // }
-  // a_r = 256 % ++r;
-  // if(a_r / 256 > 0.5){
-  //   a_g = 256 % ++g;
-  // }
-  // if(a_g / 256 > 0.5){
-  //   a_b = 256 % ++b;
-  // }
-  // color(a_r, a_g, a_b);
-  // delay(100);
-
   // Serial control RGB LED.
   while(count[0] != 1 || count[1] != 1 || count[2] != 1 || count[3] != 1 || count[4] != 1 || count[5] != 1){
   // for(int i = 0; i < 6; i++){
