@@ -55,6 +55,10 @@ void loop() {
         Serial.println("White");
         count[5] = 1;
         break;
+      case 'I':
+        color(0,0,0);
+        delay(100);
+        Serial.println("OFF");
     }
   }
   color(0,0,0); // t關閉led  
