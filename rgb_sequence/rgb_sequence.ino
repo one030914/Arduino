@@ -15,20 +15,10 @@ void setup() {
 
 void loop() {
   // RGB LED sequence.
-  if(++r > 255){
-    r--;
-  }else if(--r < 0){
-    r++;
-  }
-  a_r = 256 % ++r;
-  if(a_r / 256 > 0.5){
-    a_g = 256 % ++g;
-  }
-  if(a_g / 256 > 0.5){
-    a_b = 256 % ++b;
-  }
-  color(a_r, a_g, a_b);
-  delay(100);
+  color(++a_r, ++a_g, ++a_b);
+  delay(20);
+  // Serial.println(a_r);
+  // delay(50);
 }
 
 void color(unsigned char r, unsigned char g, unsigned char b){
