@@ -1,4 +1,4 @@
-int seg[8] = {2, 3, 4, 5, 6, 7, 8, 9}; // 7 segment pins.
+const int seg[8] = {2, 3, 4, 5, 6, 7, 8, 9}; // 7 segment pins.
 int d1 = 10, d2 = 11, d3 = 12, d4 = 13; // Digit pins.
 bool mode = true; // Cathode is false, Anode is true.
 
