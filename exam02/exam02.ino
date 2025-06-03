@@ -1,5 +1,5 @@
 #include <Timer.h>
-const int r = 11, g = 10, b = 9, vr = 0;
+const int r = 11, g = 10, b = 9, vr = A0;
 int vrValue = 0, value = 0, yr_counter = 0, table[6] = {-1, -1, -1, -1, -1, -1}, index = 0, rgb_index = 0, counter = 0;
 int vr_show, yr, vr_read, rgb_show, last_rgb;
 Timer t;
@@ -39,7 +39,7 @@ void YR(){
 
 void vrShow(){
   vrValue = analogRead(vr);
-  value = map(vrValue, 0, 1023, 0, 4);
+  value = map(vrValue, 0, 1023, 1, 4);
   Serial.print("Timer: ");
   Serial.print(millis() / 1000);
   Serial.print(" s=> VR: ");
